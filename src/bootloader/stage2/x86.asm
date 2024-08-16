@@ -29,7 +29,7 @@ _x86_div64_32:
     ; Store the results;
     mov [bx], eax
 
-    mov [bp+18], bx ; Get remainder pointer
+    mov bx, [bp + 18] ; Get remainder pointer
     mov [bx], edx ; Store remainder
 
     pop bx
